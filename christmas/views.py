@@ -11,5 +11,5 @@ def is_it_christmas(request):
 
 # returns true if it's new year
 def check_christmas():
-    now, christmas = dt.now(), dt(dt.now().year, 12, 25)
+    now, christmas = dt(dt.now().year, dt.now().month, dt.now().day, 0), dt(dt.now().year, 12, 25)
     return now == christmas
