@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'myApp',
     'newyear',
     'christmas',
+    'staticapp',
+    'tasks',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +59,7 @@ ROOT_URLCONF = 'Project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['myApp/Templates', 'newyear/templates', 'christmas/templates'],
+        'DIRS': ['myApp/Templates', 'newyear/templates', 'christmas/templates', 'staticapp/templates', 'tasks/templates',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
